@@ -1,14 +1,23 @@
 # SafeKeeper
-This is an example of an app that will store your passwords securely.
+This is an example of an app that will store your passwords securely. Connects to the MySQL database, so perform the following steps:
 
+CREATE DATABASE SAFEKEEPER;
+
+CREATE TABLE SERVICE_PASSWORD (
+ID INT NOT NULL AUTO_INCREMENT,
+LOGIN VARCHAR(45) NOT NULL,
+PASSWORD VARCHAR(50) NOT NULL,
+SERVICE VARCHAR(45) NOT NULL,
+NOTES VARCHAR(200),
+PRIMARY KEY(ID));
+
+That way it will be possible to store your passwords in the database. This application is simple, highly recommended for studies and consultations.
+Thank you.
 
 
 **IMAGES**
 
-
-###<img src="chatcommon/images/image02.png">
-###<img src="chatcommon/images/image03.png">
-###<img src="chatcommon/images/image01.png">
+<img src="safekeeper/images/safekeeper.png">
 
 ## Bio
 # Willian Carrijo
